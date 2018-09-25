@@ -1,0 +1,37 @@
+uuid: 8ce40df6-b7f9-4bf2-bbac-5866a2405e34
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product
+    - field.field.comment.product.comment_body
+    - field.field.comment.product.field_interest
+  module:
+    - text
+id: comment.product.default
+targetEntityType: comment
+bundle: product
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_interest:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

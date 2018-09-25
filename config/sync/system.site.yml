@@ -1,0 +1,14 @@
+uuid: ace26d79-7a1b-45d5-8846-9eb1603f9768
+name: 'D8 Training'
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

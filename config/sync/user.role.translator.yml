@@ -1,0 +1,9 @@
+uuid: e7c12f9d-abf6-40dd-b5d3-7d43a53516e3
+langcode: en
+status: true
+dependencies: {  }
+id: translator
+label: Translator
+weight: 3
+is_admin: null
+permissions: {  }

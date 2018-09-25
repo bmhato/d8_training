@@ -1,0 +1,29 @@
+uuid: e1660afd-2d40-4661-8f7c-828decde15de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_producr_type
+    - node.type.product
+    - taxonomy.vocabulary.interests
+id: node.product.field_producr_type
+field_name: field_producr_type
+entity_type: node
+bundle: product
+label: 'Producr Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      interests: interests
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

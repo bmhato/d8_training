@@ -1,0 +1,8 @@
+uuid: a5658811-c63b-4119-991a-01eec8d1359d
+langcode: en
+status: true
+dependencies: {  }
+id: product
+label: Product
+target_entity_type_id: block_content
+description: ''

@@ -1,0 +1,31 @@
+uuid: 0dafebdf-9d2b-459d-858c-2a641ff7ea71
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:rotator:e5a913c7-01e9-4ef8-aa82-516586bd59df'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: banner_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:e5a913c7-01e9-4ef8-aa82-516586bd59df'
+settings:
+  id: 'block_content:e5a913c7-01e9-4ef8-aa82-516586bd59df'
+  label: Banner
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: baea0268-d885-4765-aac6-498f35fd3639
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_qualification
+  module:
+    - options
+    - user
+id: user.user.field_qualification
+field_name: field_qualification
+entity_type: user
+bundle: user
+label: Qualification
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Others
+default_value_callback: ''
+settings: {  }
+field_type: list_string
