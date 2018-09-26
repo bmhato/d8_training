@@ -1,0 +1,16 @@
+d8_routing.menu_user_list:
+  title: 'User List'
+  description: 'Menu link for hello world'
+  route_name: d8_routing.user_list
+  expanded: 1
+  menu_name: main
+  weight: 100
+
+d8_routing.menu_users:
+   title: 'User'
+   description: 'NA'
+   parent: d8_routing.menu_user_list
+   route_name: d8_routing.users
+   expanded: 1
+   menu_name: main
+   weight: 10

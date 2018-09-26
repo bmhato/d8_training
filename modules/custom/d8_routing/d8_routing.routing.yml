@@ -1,0 +1,39 @@
+d8_routing.user_details:
+  path: '/user_details/{uid}'
+  default:
+    _controller: '\Drupal\d8_routing\Controller\SamplerouteController::get_user_details'
+    _title: 'User Deatils'
+  requirements:
+    _permission: 'access content'
+d8_routing.node_details:
+  path: '/content_details/{nid}'
+  default:
+    _controller: '\Drupal\d8_routing\Controller\SamplerouteController::get_content_details'
+    _title: 'Node Deatils'
+  requirements:
+    _permission: 'access content'
+
+d8_routing.users:
+   path: '/users'
+   defaults:
+     _controller: '\Drupal\d8_routing\Controller\SamplerouteController::GetUserList'
+     _title: 'List of Register Users'
+   requirements:
+     _permission: 'access content'
+     
+d8_routing.user_list:
+   path: '/user_list'
+   defaults:
+     _controller: '\Drupal\d8_routing\Controller\SamplerouteController::GetUserList'
+     _title: 'User List'
+   requirements:
+     _permission: 'access content'
+d8_routing.list_node:
+   path: '/list/{node}'
+   defaults:
+     _controller: '\Drupal\d8_routing\Controller\SamplerouteController::GetNode'
+     _title: 'Content Details'
+   requirements:
+     _access: 'TRUE'
+
+    

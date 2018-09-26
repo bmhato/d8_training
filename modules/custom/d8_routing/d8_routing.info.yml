@@ -1,0 +1,6 @@
+name: Example of Drupal 8 routing
+description: List of routing examples
+package: D8 Training
+type: module
+version: 1.0
+core: 8.x
