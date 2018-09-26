@@ -55,6 +55,46 @@ class SimpleForm extends FormBase {
       )
     )
   );
+  $form ['country'] = array (
+    '#type' => 'select',
+    '#title' => ('Country'),
+    '#options' => array (
+      'IND' => t ( 'India' ),
+      'UK' => t ( 'United Kingdom' )
+
+    )
+  );
+  $form ['india-states'] = array (
+    '#type' => 'select',
+    '#title' => 'State',
+    '#options' => array (
+      'AP' => t ( 'Andra Predesh' ),
+      'KA' => t ( 'Karnataka' )
+    ),
+    '#states' => array (
+      'visible' => array (
+        ':input[name="qualification"]' => array (
+          'value' => 'IND'
+        )
+      )
+    )
+  );
+
+  $form ['uk-states'] = array (
+    '#type' => 'select',
+    '#title' => 'State',
+    '#options' => array (
+      'LON' => t ( 'London' )
+    ),
+    '#states' => array (
+      'visible' => array (
+        ':input[name="qualification"]' => array (
+          'value' => 'OTH'
+        )
+      )
+    )
+  );
+
   $form ['actions'] ['submit'] = array (
     '#type' => 'submit',
     '#value' => $this->t ( 'Submit' ),
