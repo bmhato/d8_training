@@ -43,7 +43,7 @@ class WeatherConfigForm extends ConfigFormBase {
   *
   * @see \Drupal\Core\Form\ConfigFormBase::submitForm()
   */
- public function submitForm(array $form, FormStateInterface $form_state) {
+ public function submitForm(array &$form, FormStateInterface $form_state) {
  }
 
  /**
