@@ -42,6 +42,14 @@ d8_routing.simple_form:
       _title: 'Simple Form'
     requirements:
      _permission: 'access content'
+     
+d8_routing.admin_weather_config:
+  path: '/admin/weather-config'
+  defaults:
+    _form: '\Drupal\d8_routing\Form\WeatherConfigForm'
+    _title: 'Weather Configuration Form'
+  requirements:
+    _permission: 'administer site configuration'
       
 
     
