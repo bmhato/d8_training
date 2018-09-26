@@ -44,10 +44,14 @@ class DiForm extends FormBase {
   * @see \Drupal\Core\Form\FormInterface::buildForm()
   */
  public function buildForm(array $form, FormStateInterface $form_state) {
+  $results = $this->db->select ( 'd8_demo', 'dd' )->fields ( 'dd' )->orderBy ( 'id', 'DESC' )->range ( 0, 1 )->execute ()->fetchAll ();
+  $last_value = $results [0];
+
   $form ['first_name'] = array (
     '#type' => 'textfield',
     '#title' => t ( 'First Name:' ),
-    '#required' => TRUE
+    '#required' => TRUE,
+    '#default_value' => $last_value->first_name
   );
   $form ['last_name'] = array (
     '#type' => 'textfield',
