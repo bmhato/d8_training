@@ -34,6 +34,6 @@ d8_routing.list_node:
      _controller: '\Drupal\d8_routing\Controller\SamplerouteController::GetNode'
      _title: 'Content Details'
    requirements:
-     _access: 'TRUE'
+     _custom_access: '\Drupal\d8_routing\Controller\SamplerouteController::ListNodeAccess'
 
     

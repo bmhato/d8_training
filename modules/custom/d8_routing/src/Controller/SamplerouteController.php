@@ -8,6 +8,8 @@ namespace Drupal\d8_routing\Controller;
 
 use Drupal\user\UserInterface;
 use Drupal\node\NodeInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
 
 class SamplerouteController {
  /*
@@ -45,5 +47,13 @@ class SamplerouteController {
     '#type' => '#markup',
     '#markup' => $node->getTitle () . '|' . $owner
   ];
+ }
+
+ /*
+  * *
+  *
+  */
+ public function ListNodeAccess(NodeInterface $node, AccountInterface $account) {
+  return AccessResult::allowedIf ( $node->getOwnerId () == $account->id () );
  }
 }
