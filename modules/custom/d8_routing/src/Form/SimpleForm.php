@@ -34,6 +34,27 @@ class SimpleForm extends FormBase {
     '#title' => t ( 'Email ID:' ),
     '#required' => TRUE
   );
+  $form ['qualification'] = array (
+    '#type' => 'select',
+    '#title' => ('Qualification'),
+    '#options' => array (
+      'UG' => t ( 'Under Graduate' ),
+      'PG' => t ( 'Post Graduate' ),
+      'DOC' => t ( 'Doctoral' ),
+      'OTH' => t ( 'Others' )
+    )
+  );
+  $form ['others'] = array (
+    '#type' => 'textfield',
+    '#title' => 'Others',
+    '#states' => array (
+      'visible' => array (
+        ':input[name="qualification"]' => array (
+          'value' => 'OTH'
+        )
+      )
+    )
+  );
   $form ['actions'] ['submit'] = array (
     '#type' => 'submit',
     '#value' => $this->t ( 'Submit' ),
