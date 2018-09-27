@@ -14,3 +14,12 @@ d8_demo.demoroute_controller_helloDynamic:
     _title: 'Hello World Dynamic'
   requirements:
     _permission: 'access content'
+
+d8_demo.simpledemo_form:
+  path: '/simple_demo_form'
+  defaults:
+    _form: '\Drupal\d8_demo\Form\SimpledemoForm'
+    _title: 'SimpledemoForm'
+  requirements:
+    _access: 'TRUE'
+  

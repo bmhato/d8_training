@@ -2,3 +2,8 @@
 access content:
   title: 'Access content'
   description: 'Allow access to my content'
+
+demo access content:
+  title: 'Demo Access Content'
+  description: 'Allow access to my content'
+  restrict access: true
