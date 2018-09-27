@@ -1,0 +1,8 @@
+name: 'Drupal 8 Demo'
+type: module
+description: 'Demo functionality of Drupal 8'
+core: 8.x
+package: 'D8 Training'
+dependencies:
+  - node
+  - user

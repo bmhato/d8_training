@@ -1,0 +1,14 @@
+{
+  "name": "drupal/d8_demo",
+  "type": "drupal-module",
+  "description": "Demo functionality of Drupal 8",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/d8_demo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/d8_demo",
+    "source": "http://cgit.drupalcode.org/d8_demo"
+  },
+  "require": { }
+}

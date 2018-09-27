@@ -6,6 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Database\Connection;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\d8_routing\Controller\DataController;
 
 class DiForm extends FormBase {
  protected $db;
@@ -13,7 +14,7 @@ class DiForm extends FormBase {
   *
   * @param Connection $db
   */
- public function __construct(Connection $db) {
+ public function __construct(DataController $db) {
   $this->db = $db;
  }
 
@@ -23,7 +24,7 @@ class DiForm extends FormBase {
   *
   */
  public static function create(ContainerInterface $container) {
-  return new static ( $container->get ( 'database' ) );
+  return new static ( $container->get ( 'd8_routing.data_controller' ) );
  }
 
  /**

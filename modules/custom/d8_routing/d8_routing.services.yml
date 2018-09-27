@@ -1,4 +1,7 @@
 services:
+  d8_routing.data_controller:
+    class: Drupal\d8_routing\Controller\DataController
+    arguments: ['@database']
   d8_routing.user_same_as_author:
     class: Drupal\d8_routing\Access\UserAccessCheck
     tags:
