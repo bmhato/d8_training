@@ -1,0 +1,16 @@
+
+d8_demo.demoroute_controller_helloworld:
+  path: '/hello_world'
+  defaults:
+    _controller: '\Drupal\d8_demo\Controller\DemorouteController::helloworld'
+    _title: 'Demo Controller'
+  requirements:
+    _permission: 'access content'
+
+d8_demo.demoroute_controller_helloDynamic:
+  path: 'hello/{name}'
+  defaults:
+    _controller: '\Drupal\d8_demo\Controller\DemorouteController::helloDynamic'
+    _title: 'Hello World Dynamic'
+  requirements:
+    _permission: 'access content'
