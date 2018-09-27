@@ -5,4 +5,9 @@ services:
   d8_routing.user_same_as_author:
     class: Drupal\d8_routing\Access\UserAccessCheck
     tags:
-      - { name: access_check, applies_to: _user_same_as_author }
+      - { name: access_check, applies_to: _user_same_as_author }  
+  d8_routing.kernel_response_subscriber:
+    class: Drupal\d8_routing\EventSubscriber\KernelResponseSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }
